@@ -1,3 +1,5 @@
+// 9. Escreva um algoritmo que leia o código de origem de um produto e imprima a região do mesmo, conforme a tabela.
+
 const prompt = require('prompt-sync')();
 
 const codigo = Number(prompt("Digite o codigo do produto: "))

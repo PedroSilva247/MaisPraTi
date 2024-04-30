@@ -4,6 +4,7 @@ Para verificar se os lados fornecidos formam triângulo: A < B + C e B < A + C e
 Triângulo escaleno: possui todos os lados diferentes (A<>B e B <> C) 
 Triângulo eqüilátero: possui todos os lados iguais (A=B e B=C)
 */
+const prompt = require('prompt-sync')();
 
 const lado1 = Number(prompt("Digite o primeiro lado do triangulo: "))
 const lado2 = Number(prompt("Digite o segundo lado do triangulo: "))

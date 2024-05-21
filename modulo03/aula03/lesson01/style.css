@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    animation-duration: 0.5s;
+}
+@keyframes anima {
+    from {font-size:12pt;}
+    to {font-size: 17pt;}
+}
+a:visited {
+    text-transform: uppercase;
+}
+a:hover {
+    animation-name: anima;
+    font-size: 17pt;
+    
+    
+}
+a:active{
+    color: aqua;
+}

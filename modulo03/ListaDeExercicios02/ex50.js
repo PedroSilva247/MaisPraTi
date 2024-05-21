@@ -52,6 +52,10 @@ function acao() {
             break
         case "buscar hoteis":
             return buscarHoteis()
+        case "reservar":
+            return addReserva()
+        case "cancelar reserva":
+            return cancelarReserva()
         default:
             console.log("Digite uma ação existente!")
             acao()
@@ -72,17 +76,11 @@ function addHotel(idNew, nomeNew, cidadeNew, quartosTotaisNew, quartosDisponivei
 }
 
 function add() {
-    let ids = []
     for (hotel of hoteis) {
         ids.push(hotel.id)
     }
-    let newHotelId = Number(prompt("Digite o id do novo hotel: "))
-    while (ids.indexOf(newHotelId) != -1) {
-        console.log("-----------------------------------------------")
-        console.log("O id digitado já está em uso!")
-        console.log("-----------------------------------------------")
-        newHotelId = prompt("Digite o id do novo hotel: ")
-    }
+    let newHotelId = hoteis.length == 0 ? "0001" : ("0000" + (Number(hoteis[hoteis.length-1].id)+1)).slice(-4)
+    console.log("O id do novo hotel é: ",newHotelId)
     let newHotelNome = prompt("Digite o nome do novo hotel: ")
     let newHotelCidade = prompt("Digite a cidade do novo hotel: ")
     let newHotelQuartosTotais = Number(prompt("Digite quantos quartos tem o novo hotel: "))
@@ -115,6 +113,60 @@ function buscarHoteis() {
         }
     }
     return acao()
+}
+function addReserva() {
+    let idHotelDesejado = String(prompt("Digite o id do hotel desejado: "))
+    console.log("-----------------------------------------------")
+    let idHoteisQuartosDisponiveis = []
+    for (hotel of hoteis) {
+        if (Number(hotel.quartosDisponiveis)) {
+            idHoteisQuartosDisponiveis.push(hotel.id)
+        }
+    }
+    if (idHoteisQuartosDisponiveis.indexOf(idHotelDesejado) == -1) {
+        console.log("Hotel não encontrado no sistema ou não possui quartos disponíveis.")
+        return acao()
+    } else {
+        let nomeClienteReserva = prompt("Digite seu nome: ")
+        let reserva = {
+            idHotel: idHotelDesejado,
+            idReserva: reservas.length == 0 ? "0001" : ("0000" + (Number(reservas[reservas.length-1].idReserva)+1)).slice(-4),
+            nomeCliente: nomeClienteReserva
+        }
+        console.log("O id da sua reserva é: ",reserva.idReserva)
+        reservas.push(reserva)
+        for (hotel of hoteis) {
+            if (hotel.id == idHotelDesejado) {
+                hotel.quartosDisponiveis --
+                console.log("-----------------------------------------------")
+                console.log("Reserva realizada!")
+                return acao()
+            }
+        }
+    }
+}
+
+function cancelarReserva() {
+    let idReservas = []
+    for (reserva of reservas) [
+        idReservas.push(reserva.idReserva)
+    ]
+    let idReservaDesejada = prompt("Digite o id da reserva que deseja cancelar: ")
+    if (idReservas.indexOf(idReservaDesejada) == -1) {
+        console.log("Reserva não encontrada.")
+        return acao()
+    } else {
+        let idHotelRemover = reservas[idReservas.indexOf(idReservaDesejada)]["idHotel"]
+        for (hotel of hoteis) {
+            if (hotel.id == idHotelRemover) {
+                hotel.quartosDisponiveis ++
+                console.log("-----------------------------------------------")
+                console.log(`Reserva de ${reservas[idReservas.indexOf(idReservaDesejada)]["nomeCliente"]} cancelada!`)
+                reservas.splice(idReservas.indexOf(idReservaDesejada),1)
+                return acao()
+            }
+        }
+    }
 }
 
 acao()

@@ -1,0 +1,33 @@
+.tabela {
+    width: 300px;
+    border: 2px dashed rgb(0, 0, 0);
+    border-radius: 10PX;
+}
+.elementos {
+    border-radius: 10px;
+}
+.inter {
+    background-color: red;
+    color: white;
+    
+}
+.gremio {
+    background-color: rgb(45, 45, 252);
+    color: white;
+}
+.empate {
+    background-color: gray;
+    color: white;
+
+}
+.elemento01 {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.vazio {
+    visibility: hidden;
+}
+.coluna1 {
+    width: 200px;
+    
+}

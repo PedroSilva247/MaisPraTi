@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora" id="calc">
+
+        <form name="formulario">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" maxlength="15" class="resultado" name="tela" readonly></td>
+                </tr>
+                <tr class="botoes">
+                    <td><input type="button" value="C" class="botao" onclick="limparTela()"></td>
+                    <td><input type="button" value="del" class="botao" onclick="deletar()"></td>
+                    <td><input type="button" value="-" class="botao" onclick="inserir('-')"></td>
+                    <td><input type="button" value="+" class="botao" onclick="inserir('+')"></td>
+                </tr>
+                <tr class="botoes">
+                    <td><input type="button" value="1" class="botao" onclick="inserir(1)"></td>
+                    <td><input type="button" value="2" class="botao" onclick="inserir(2)"></td>
+                    <td><input type="button" value="3" class="botao" onclick="inserir(3)"></td>
+                    <td><input type="button" value="/" class="botao" onclick="inserir('/')"></td>
+                </tr>
+                <tr class="botoes">
+                    <td><input type="button" value="4" class="botao" onclick="inserir(4)"></td>
+                    <td><input type="button" value="5" class="botao" onclick="inserir(5)"></td>
+                    <td><input type="button" value="6" class="botao" onclick="inserir(6)"></td>
+                    <td><input type="button" value="*" class="botao" onclick="inserir('*')"></td>
+                </tr>
+                <tr class="botoes">
+                    <td><input type="button" value="7" class="botao" onclick="inserir(7)"></td>
+                    <td><input type="button" value="8" class="botao" onclick="inserir(8)"></td>
+                    <td><input type="button" value="9" class="botao" onclick="inserir(9)"></td>
+                    <td><input type="button" value="=" class="botao" onclick="calcularTotal()"></td>
+                </tr>
+                <tr class="botoes">
+                    <td><input type="button" value="." class="botao" onclick="inserir('.')"></td>
+                    <td><input type="button" value="0" class="botao" onclick="inserir(0)"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <section class="selecionar-cor">
+        <p> Selecione a cor da calculadora</p>
+        <div id="azul" class="cor azul" onclick="azul()"></div>
+        <div id="vermelho" class="cor vermelho" onclick="vermelho()"></div>
+        <div id="verde" class="cor verde" onclick="verde()"></div>
+        <div id="amarelo" class="cor amarelo" onclick="amarelo()"></div>
+        <div id="laranja" class="cor laranja" onclick="laranja()"></div>
+        <div id="roxo" class="cor roxo" onclick="roxo()"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

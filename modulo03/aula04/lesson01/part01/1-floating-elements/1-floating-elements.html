@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Elements</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        #principal {
+            width: 920px;
+            border: 1px solid red;
+            background-color: cadetblue;
+        }
+        #galeria {
+            border: 1px solid red;
+            width: 1600px;
+            margin-top: 5px;
+            background-color: yellow;
+        }
+        .noticia {
+            width: 280px;
+            padding: 5px;
+            margin: 7px;
+            background-color: #e5e5e5;
+            float: left;
+            
+        }
+        .imagem-galeria {
+            background-color: #fff;
+            width: 265px;
+            padding: 5px;
+            margin: 15px;
+            float: left;
+            
+        }
+        .clear {
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="noticia">
+            <h2>Noticias do inter</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, officia numquam. Necessitatibus, minus dolor? Architecto quas, officiis repellendus quisquam, suscipit sequi ipsa, unde tenetur quaerat reiciendis totam nemo nihil quidem!
+            </p>
+            <a href="a">veja mais</a>
+        </div>
+        <div class="noticia">
+            <h2>Noticias do inter</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, officia numquam. Necessitatibus, minus dolor? Architecto quas, officiis repellendus quisquam, suscipit sequi ipsa, unde tenetur quaerat reiciendis totam nemo nihil quidem!
+            </p>
+            <a href="a">veja mais</a>
+        </div>
+        <div class="noticia">
+            <h2>Noticias do inter</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, officia numquam. Necessitatibus, minus dolor? Architecto quas, officiis repellendus quisquam, suscipit sequi ipsa, unde tenetur quaerat reiciendis totam nemo nihil quidem!
+            </p>
+            <a href="a">veja mais</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="galeria">
+        <div class="imagem-galeria">
+            <img src="../images/image1.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsam minima fuga repellendus, labore facere minus similique! Laboriosam animi, totam, ratione necessitatibus vel suscipit obcaecati error commodi amet iste in!</p>
+        </div>
+        <div class="imagem-galeria">
+            <img src="../images/image2.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium veniam deserunt quod voluptate cum atque nulla soluta placeat modi ratione necessitatibus. Doloremque, magnam excepturi. Natus nobis eaque odit voluptatibus.</p>
+        </div>
+        <div class="imagem-galeria">
+            <img src="../images/image3.png" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione earum maiores id reprehenderit fugiat in necessitatibus sapiente. Perspiciatis, ipsa. Quos nam at beatae nostrum quia eveniet optio commodi quo culpa!</p>
+        </div>
+        <div class="imagem-galeria">
+            <img src="../images/image4.png" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptates cumque laborum, incidunt beatae aliquam atque inventore corrupti blanditiis praesentium voluptas iste sint odio soluta, doloremque eligendi consequuntur, error corporis.</p>
+        </div>
+        <div class="imagem-galeria">
+            <img src="../images/image5.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora rerum, animi incidunt, neque expedita rem perferendis, deserunt quas culpa natus assumenda fugit odit tenetur nostrum libero quia? Sequi, iste?</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

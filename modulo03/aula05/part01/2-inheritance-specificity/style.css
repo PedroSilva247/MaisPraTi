@@ -1,0 +1,37 @@
+div {
+    border: 2px solid;
+}
+/* SELETORES IGUAIS, O QUE VALE É O ULTIMO, EXETO SE TEM !IMPORTANT */
+#div01 p {
+    color: red !important;
+}
+#div01 p {
+    color: blue;
+}
+
+.classDiv01 h1 {
+    color: yellow;
+}
+h1 {
+    font-size: 30px;
+}
+#textoPrincipal {
+    color: green;
+    font-size: 10px;
+}
+h1#textoPrincipal {
+    color: aqua;
+}
+/*
+MENOS IMPORTANTE
+
+Seletores Universais
+Tipo de Seletores
+Classes seletoras
+Atributos Seletores
+Pseudo-classes
+Seletores ID
+Estilo Inline
+
+MAIS IMPORTANTE
+*/

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+
+</head>
+<body>
+    <button type="button" onclick="popUp()">Abrir uma janela</button>
+    <button type="button" onclick="closePopUp()">Fechar janela</button>
+    <button type="button" onclick="print()">Imprimir pagina</button>
+
+
+    <script>
+        function popUp() {
+            return window.open('', 'nova_janela', 'width=100')
+        }
+        function closePopUp() {
+            
+            janela.close()
+        }
+
+    </script>
+</body>
+</html>

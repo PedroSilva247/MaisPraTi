@@ -1,0 +1,26 @@
+/* SELECIONA TUDO DA PAGINA
+ * {
+    border: 2px solid black;
+} */
+
+h2 {
+    color: red;
+}
+/* FILHO DIRETO */
+li > a {
+    text-decoration: none;
+}
+/* TODOS OS A DENTRO DO LI */
+li a {
+    text-decoration: none;
+}
+/* SELECIONA OS P AO LADO DE H2 -- Seletor de irmao */
+h2 + p {
+    text-transform: uppercase;
+}
+/* SELECIONA TODOS OS P DEPOIS DE UM H2 */
+h2~p {
+
+}
+
+

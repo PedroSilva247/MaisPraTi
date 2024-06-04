@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript aplicando CSS</title>
+    <style>
+        .color1 {
+            background-color: rgb(69, 134, 134);
+            border-radius: 40%;
+        }
+        .color2 {
+            background-color: rgb(196, 73, 73);
+            border-radius: 30%;
+            color: aqua;
+        }
+        .color3 {
+            background-color: rgb(53, 54, 156);
+            border-radius: 20%;
+        }
+        .color4 {
+            background-color: rgb(123, 77, 161);
+            border-radius: 10%;
+        }
+    </style>
+    
+    <script>
+        function trocarEstilizacao(color) {
+            var div = document.getElementById("div1")
+            div.classList.add(color)
+            // div.classList = color
+            // div.className = color
+        }
+        
+    </script>
+</head>
+<body id="body">
+    <button type="button" onclick="trocarEstilizacao('color1')"> color1 </button>
+    <button type="button" onclick="trocarEstilizacao('color2')"> color2 </button>
+    <button type="button" onclick="trocarEstilizacao('color3')"> color3 </button>
+    <button type="button" onclick="trocarEstilizacao('color4')"> color4 </button>
+    <div style="width: 200px; height: 200px;" id="div1">fdsfsf</div>
+</body>
+</html>

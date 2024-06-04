@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        body,html {
+            margin: 0;
+            color: #777;
+            height: 100%;
+        }
+
+        .conteudo {
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+        .conteudo-titulo {
+            position: absolute;
+            left: 0;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+        .conteudo-titulo span.titulo {
+            color: #fff;
+            background-color: #111;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        .caixa1, .caixa2, .caixa3, .caixa4 {
+            position: relative;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .caixa1 {
+            background-image: url("imagens/imagem2.jpg");
+        }
+        .caixa2 {
+            background-image: url("imagens/imagem3.jpg");
+        }
+        .caixa3 {
+            background-image: url("imagens/imagem4.jpg");
+        }
+        .caixa4 {
+            background-image: url("imagens/imagem5.jpg");
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">IMAGEM 1</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sit atque corrupti voluptate dicta et officiis, non temporibus optio doloremque vitae labore assumenda voluptates. Dicta necessitatibus maiores molestias ex, dolor totam eveniet ducimus porro obcaecati esse accusamus sed sequi odio iusto dolorum minima nisi eos ab possimus illo dolore iure, nam eaque voluptatibus. Vel ab pariatur aspernatur recusandae doloribus, cumque doloremque eveniet autem, reiciendis ad officia optio voluptatem porro nostrum dignissimos labore necessitatibus, nesciunt nobis quod. Beatae quam non accusantium nobis numquam alias distinctio odit nostrum ratione eum, quasi magni quod vero hic labore, ipsum eveniet animi quidem repellendus inventore. Dicta ipsa cumque ab expedita vitae doloribus adipisci sunt repudiandae quibusdam praesentium. Suscipit voluptates voluptatum reprehenderit veniam fuga, repellat asperiores consectetur amet sed aliquam voluptatem magnam, error veritatis dignissimos quidem esse beatae nisi tempore doloremque autem assumenda debitis. Veritatis quidem, illum blanditiis eaque laudantium quibusdam maiores ullam magni ab expedita commodi fugit, reprehenderit exercitationem iste hic in et. Dolor atque excepturi rerum officiis. Vero natus at unde similique iure sunt optio ratione assumenda officiis eligendi, voluptate debitis? Quaerat ad ducimus error ut reiciendis? Ab alias perferendis iure eos! Cumque blanditiis debitis repellendus beatae similique praesentium eos accusamus magnam itaque in!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum labore quam molestiae quas vitae, mollitia laudantium expedita libero a, ipsa voluptatem veniam cupiditate eum cumque quasi? Deserunt quidem nesciunt, error quisquam laboriosam quia voluptas maiores impedit numquam odit cumque dolor pariatur labore maxime cum architecto aspernatur vero debitis rerum ipsum amet expedita ducimus praesentium consectetur! Corporis, consequuntur molestias maiores earum in necessitatibus eos possimus sit recusandae neque dolores porro reiciendis ipsam. Eveniet nostrum, sint adipisci ad at sapiente ut architecto, hic ratione quos ullam vel laudantium maiores illum harum quia deleniti quas culpa accusantium. Sed, expedita dolorem illo sint impedit natus id ducimus repudiandae magnam totam sunt. Minima, tenetur, aperiam molestias rem ea accusamus voluptates tempora atque exercitationem neque corporis facilis, magnam dolor ab cum repellat vel numquam amet similique soluta dicta illum! Et, itaque nihil cum aspernatur optio minus placeat accusantium quis fuga officiis sapiente nulla, dolores facilis tempora temporibus nisi cupiditate hic numquam repellendus. Voluptatem autem repellendus rerum quasi quis eos soluta perspiciatis blanditiis tempore totam odio, atque minus eligendi eum quaerat tenetur accusamus possimus saepe. Omnis explicabo earum dignissimos veritatis vero corrupti illum molestiae, hic deserunt facilis ratione iusto, quos neque sequi magni, incidunt perferendis quaerat.</p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">IMAGEM 2</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sit atque corrupti voluptate dicta et officiis, non temporibus optio doloremque vitae labore assumenda voluptates. Dicta necessitatibus maiores molestias ex, dolor totam eveniet ducimus porro obcaecati esse accusamus sed sequi odio iusto dolorum minima nisi eos ab possimus illo dolore iure, nam eaque voluptatibus. Vel ab pariatur aspernatur recusandae doloribus, cumque doloremque eveniet autem, reiciendis ad officia optio voluptatem porro nostrum dignissimos labore necessitatibus, nesciunt nobis quod. Beatae quam non accusantium nobis numquam alias distinctio odit nostrum ratione eum, quasi magni quod vero hic labore, ipsum eveniet animi quidem repellendus inventore. Dicta ipsa cumque ab expedita vitae doloribus adipisci sunt repudiandae quibusdam praesentium. Suscipit voluptates voluptatum reprehenderit veniam fuga, repellat asperiores consectetur amet sed aliquam voluptatem magnam, error veritatis dignissimos quidem esse beatae nisi tempore doloremque autem assumenda debitis. Veritatis quidem, illum blanditiis eaque laudantium quibusdam maiores ullam magni ab expedita commodi fugit, reprehenderit exercitationem iste hic in et. Dolor atque excepturi rerum officiis. Vero natus at unde similique iure sunt optio ratione assumenda officiis eligendi, voluptate debitis? Quaerat ad ducimus error ut reiciendis? Ab alias perferendis iure eos! Cumque blanditiis debitis repellendus beatae similique praesentium eos accusamus magnam itaque in!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum labore quam molestiae quas vitae, mollitia laudantium expedita libero a, ipsa voluptatem veniam cupiditate eum cumque quasi? Deserunt quidem nesciunt, error quisquam laboriosam quia voluptas maiores impedit numquam odit cumque dolor pariatur labore maxime cum architecto aspernatur vero debitis rerum ipsum amet expedita ducimus praesentium consectetur! Corporis, consequuntur molestias maiores earum in necessitatibus eos possimus sit recusandae neque dolores porro reiciendis ipsam. Eveniet nostrum, sint adipisci ad at sapiente ut architecto, hic ratione quos ullam vel laudantium maiores illum harum quia deleniti quas culpa accusantium. Sed, expedita dolorem illo sint impedit natus id ducimus repudiandae magnam totam sunt. Minima, tenetur, aperiam molestias rem ea accusamus voluptates tempora atque exercitationem neque corporis facilis, magnam dolor ab cum repellat vel numquam amet similique soluta dicta illum! Et, itaque nihil cum aspernatur optio minus placeat accusantium quis fuga officiis sapiente nulla, dolores facilis tempora temporibus nisi cupiditate hic numquam repellendus. Voluptatem autem repellendus rerum quasi quis eos soluta perspiciatis blanditiis tempore totam odio, atque minus eligendi eum quaerat tenetur accusamus possimus saepe. Omnis explicabo earum dignissimos veritatis vero corrupti illum molestiae, hic deserunt facilis ratione iusto, quos neque sequi magni, incidunt perferendis quaerat.</p>
+    </div>
+    
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">IMAGEM 3</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sit atque corrupti voluptate dicta et officiis, non temporibus optio doloremque vitae labore assumenda voluptates. Dicta necessitatibus maiores molestias ex, dolor totam eveniet ducimus porro obcaecati esse accusamus sed sequi odio iusto dolorum minima nisi eos ab possimus illo dolore iure, nam eaque voluptatibus. Vel ab pariatur aspernatur recusandae doloribus, cumque doloremque eveniet autem, reiciendis ad officia optio voluptatem porro nostrum dignissimos labore necessitatibus, nesciunt nobis quod. Beatae quam non accusantium nobis numquam alias distinctio odit nostrum ratione eum, quasi magni quod vero hic labore, ipsum eveniet animi quidem repellendus inventore. Dicta ipsa cumque ab expedita vitae doloribus adipisci sunt repudiandae quibusdam praesentium. Suscipit voluptates voluptatum reprehenderit veniam fuga, repellat asperiores consectetur amet sed aliquam voluptatem magnam, error veritatis dignissimos quidem esse beatae nisi tempore doloremque autem assumenda debitis. Veritatis quidem, illum blanditiis eaque laudantium quibusdam maiores ullam magni ab expedita commodi fugit, reprehenderit exercitationem iste hic in et. Dolor atque excepturi rerum officiis. Vero natus at unde similique iure sunt optio ratione assumenda officiis eligendi, voluptate debitis? Quaerat ad ducimus error ut reiciendis? Ab alias perferendis iure eos! Cumque blanditiis debitis repellendus beatae similique praesentium eos accusamus magnam itaque in!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum labore quam molestiae quas vitae, mollitia laudantium expedita libero a, ipsa voluptatem veniam cupiditate eum cumque quasi? Deserunt quidem nesciunt, error quisquam laboriosam quia voluptas maiores impedit numquam odit cumque dolor pariatur labore maxime cum architecto aspernatur vero debitis rerum ipsum amet expedita ducimus praesentium consectetur! Corporis, consequuntur molestias maiores earum in necessitatibus eos possimus sit recusandae neque dolores porro reiciendis ipsam. Eveniet nostrum, sint adipisci ad at sapiente ut architecto, hic ratione quos ullam vel laudantium maiores illum harum quia deleniti quas culpa accusantium. Sed, expedita dolorem illo sint impedit natus id ducimus repudiandae magnam totam sunt. Minima, tenetur, aperiam molestias rem ea accusamus voluptates tempora atque exercitationem neque corporis facilis, magnam dolor ab cum repellat vel numquam amet similique soluta dicta illum! Et, itaque nihil cum aspernatur optio minus placeat accusantium quis fuga officiis sapiente nulla, dolores facilis tempora temporibus nisi cupiditate hic numquam repellendus. Voluptatem autem repellendus rerum quasi quis eos soluta perspiciatis blanditiis tempore totam odio, atque minus eligendi eum quaerat tenetur accusamus possimus saepe. Omnis explicabo earum dignissimos veritatis vero corrupti illum molestiae, hic deserunt facilis ratione iusto, quos neque sequi magni, incidunt perferendis quaerat.</p>
+    </div>
+    
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">IMAGEM 4</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sit atque corrupti voluptate dicta et officiis, non temporibus optio doloremque vitae labore assumenda voluptates. Dicta necessitatibus maiores molestias ex, dolor totam eveniet ducimus porro obcaecati esse accusamus sed sequi odio iusto dolorum minima nisi eos ab possimus illo dolore iure, nam eaque voluptatibus. Vel ab pariatur aspernatur recusandae doloribus, cumque doloremque eveniet autem, reiciendis ad officia optio voluptatem porro nostrum dignissimos labore necessitatibus, nesciunt nobis quod. Beatae quam non accusantium nobis numquam alias distinctio odit nostrum ratione eum, quasi magni quod vero hic labore, ipsum eveniet animi quidem repellendus inventore. Dicta ipsa cumque ab expedita vitae doloribus adipisci sunt repudiandae quibusdam praesentium. Suscipit voluptates voluptatum reprehenderit veniam fuga, repellat asperiores consectetur amet sed aliquam voluptatem magnam, error veritatis dignissimos quidem esse beatae nisi tempore doloremque autem assumenda debitis. Veritatis quidem, illum blanditiis eaque laudantium quibusdam maiores ullam magni ab expedita commodi fugit, reprehenderit exercitationem iste hic in et. Dolor atque excepturi rerum officiis. Vero natus at unde similique iure sunt optio ratione assumenda officiis eligendi, voluptate debitis? Quaerat ad ducimus error ut reiciendis? Ab alias perferendis iure eos! Cumque blanditiis debitis repellendus beatae similique praesentium eos accusamus magnam itaque in!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum labore quam molestiae quas vitae, mollitia laudantium expedita libero a, ipsa voluptatem veniam cupiditate eum cumque quasi? Deserunt quidem nesciunt, error quisquam laboriosam quia voluptas maiores impedit numquam odit cumque dolor pariatur labore maxime cum architecto aspernatur vero debitis rerum ipsum amet expedita ducimus praesentium consectetur! Corporis, consequuntur molestias maiores earum in necessitatibus eos possimus sit recusandae neque dolores porro reiciendis ipsam. Eveniet nostrum, sint adipisci ad at sapiente ut architecto, hic ratione quos ullam vel laudantium maiores illum harum quia deleniti quas culpa accusantium. Sed, expedita dolorem illo sint impedit natus id ducimus repudiandae magnam totam sunt. Minima, tenetur, aperiam molestias rem ea accusamus voluptates tempora atque exercitationem neque corporis facilis, magnam dolor ab cum repellat vel numquam amet similique soluta dicta illum! Et, itaque nihil cum aspernatur optio minus placeat accusantium quis fuga officiis sapiente nulla, dolores facilis tempora temporibus nisi cupiditate hic numquam repellendus. Voluptatem autem repellendus rerum quasi quis eos soluta perspiciatis blanditiis tempore totam odio, atque minus eligendi eum quaerat tenetur accusamus possimus saepe. Omnis explicabo earum dignissimos veritatis vero corrupti illum molestiae, hic deserunt facilis ratione iusto, quos neque sequi magni, incidunt perferendis quaerat.</p>
+    </div>
+</body>
+</html>

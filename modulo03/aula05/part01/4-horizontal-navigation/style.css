@@ -1,0 +1,42 @@
+html,body {
+    margin: 0;
+    height: 100%;
+}
+.sec-menu {
+    width: 100%; height: 100px;
+    background-color: rgb(153, 153, 153);
+}
+.table-menu {
+    height: 30px;
+    position: fixed;
+    right: 30px;
+    top: 27px;
+}
+.p-botao {
+    margin: 0;
+    padding: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.th-elemento :hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+.tr-menu {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.th-elemento {
+    margin: 0;
+    padding-left: 10px; padding-right: 10px;
+    height: 30px;
+    border-radius: 16px;
+}
+
+body#menu table tr .th-menu, body#sobre table tr .th-sobre, body#contato table tr .th-contato {
+    background-color: rgba(0, 0, 0, 0.281);
+}
+a {
+    color: black;
+    text-decoration: none;
+}

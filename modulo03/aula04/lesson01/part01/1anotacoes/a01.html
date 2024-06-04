@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Elements</title>
+    <style>
+        .content {
+            background-color: rgb(30, 255, 0);
+            border: 1px solid red;
+            padding: 10px;
+            height: 150px; width: 150px;
+            float: right;
+        }
+        .content1 {
+            background-color: yellowgreen;
+            border: 1px solid blue;
+            height: 150px; width: 150px;
+            padding: 10px;
+            float: left;
+        }
+
+        .clear {
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe praesentium voluptatum exercitationem dolor est vero a accusamus obcaecati nisi. 
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe praesentium voluptatum exercitationem dolor est vero a accusamus obcaecati nisi.
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe praesentium voluptatum exercitationem dolor est vero a accusamus obcaecati nisi. 
+    </div>
+    <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi quis quos deleniti perspiciatis similique ullam esse placeat rerum voluptas optio, autem deserunt veritatis ea animi provident exercitationem ad non?
+    </p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#box {
+    width: 400px; height: 400px;
+    background: url(Pica_pau.png);
+}
+#box h1 {
+    background: linear-gradient(red,green, yellow);
+
+}

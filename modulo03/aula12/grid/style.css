@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); /* altura min 100px max auto */
+    gap: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 1em;
+    color: brown;
+    text-align: center;
+}
+
+.box > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+/* 
+grid-column: 1/4; comeca na coluna 1 e termina na 4
+*/
+.one {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.four {
+    grid-column: 1/2;
+    grid-row: 13;
+}

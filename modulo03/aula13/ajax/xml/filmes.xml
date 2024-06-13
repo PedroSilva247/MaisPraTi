@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmes>
+    <filme id="1">
+        <titulo>Kill Bill</titulo>
+        <resumo>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam earum accusantium praesentium ex tempora dolores eius, accusamus vero, eaque optio tempore doloribus quisquam obcaecati quia. Vitae quibusdam optio deleniti reprehenderit?
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Wagner Moura</ator>
+            <ator>Rodrigo Santoro</ator>
+            <ator>Lázaro Ramos</ator>
+        </elenco>
+    </filme>
+    <filme id="2">
+        <titulo>Interestelar</titulo>
+        <resumo>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam earum accusantium praesentium ex tempora dolores eius, accusamus vero, eaque optio tempore doloribus quisquam obcaecati quia. Vitae quibusdam optio deleniti reprehenderit?
+        </resumo>
+        <genero>Drama</genero>
+        <genero>Ficção Científica</genero>
+        <elenco>
+            <ator>Wagner Moura</ator>
+            <ator>Rodrigo Santoro</ator>
+            <ator>Lázaro Ramos</ator>
+        </elenco>
+    </filme>
+    <filme id="3">
+        <titulo>Vingadores: Guerra Infinita</titulo>
+        <resumo>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam earum accusantium praesentium ex tempora dolores eius, accusamus vero, eaque optio tempore doloribus quisquam obcaecati quia. Vitae quibusdam optio deleniti reprehenderit?
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Drama</genero>
+        <elenco>
+            <ator>Wagner Moura</ator>
+            <ator>Rodrigo Santoro</ator>
+            <ator>Lázaro Ramos</ator>
+        </elenco>
+    </filme>
+</filmes>

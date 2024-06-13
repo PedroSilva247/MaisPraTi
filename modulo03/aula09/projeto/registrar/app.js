@@ -28,7 +28,9 @@ class Database {
         }
     }
 
-    getTasks() {
+    
+
+    loadTasks() {
         const tasks = Array()
 
         const id = localStorage.getItem('id')
@@ -99,16 +101,17 @@ function registerTask() {
     }
 }
 
-function loadTasks() {
+function loadTasks(tasks) {
 
-    if(tasks.length === 0) {
-        tasks = database.getTasks()
+    if(tasks === undefined){
+        tasks = database.loadTasks()
     }
 
 
     
 
     const listTasks = document.getElementById('listTasks')
+    listTasks.innerHTML = ''
 
     tasks.forEach((t) => {
         const row = listTasks.insertRow()
@@ -133,26 +136,23 @@ function loadTasks() {
     })
 }
 
-function searchTasks(task) {
+function searchTasks() {
     const name =            document.getElementById("nome").value
     const date =            document.getElementById("data").value
     const hour =            document.getElementById("horario").value
     const description =     document.getElementById("descricao").value
     const resourses =       document.getElementById("recursos").value
 
-    const task = new Task(name, date, hour, description, resourses)
+    
+    const task = new Task(year, month, day, type, description)
 
-    const tasks = database.searchTasks()
+    const tasks = database.searchTasks(task)
 
     loadTasks(tasks)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    if(document.body.contains(document.getElementById("listTasks"))) {
+    if(document.body.contains(document.getElementById('listTasks'))){
         loadTasks()
     }
 })
-
-
-
-

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src:
+        url(..//fonts/Poppins-Regular.ttf)
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src:
+        url(..//fonts/Poppins-Bold.ttf)
+}
+
+/* Variaveis CSS */
+
+
+:root {
+    --azul-0: #002D42;
+    --azul-1: #00496B;
+    --azul-2: #006594;
+    --azul-3: #0081BD;
+    --azul-4: #0098E0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav {
+    background-color: var(--azul-0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    margin-right: 4rem;
+    cursor: pointer;
+    font-family: "Poppins-Bold";
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    
+}
+
+nav ul .nav-item {
+    list-style: none;
+}
+
+nav ul .nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins-Regular";
+    padding: 5px 0;
+    transition-duration: 200ms;
+}
+nav ul .nav-item :hover {
+    color: #98b8c9;
+    border-bottom: 1px solid #98b8c9;
+}
+/* ----------------------------------------------------------- */
+
+.sec1 {
+    
+}
+.carrossel {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+
+}
+.img {
+    width: 400px; 
+}
+.faixa {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flecha {
+    width: 70px;
+    cursor: pointer;
+}

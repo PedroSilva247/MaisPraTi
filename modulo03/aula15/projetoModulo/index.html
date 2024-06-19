@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/carrossel.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"></a>
+            <h1>Titulo aqui</h1>
+            <ul>
+                <li class="nav-item"><a href="" class="nav-link">Página Inicial</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec1">
+            <div class="carrossel">
+                <div class="faixa faixa-esquerda">
+                    <img src="assets/icons/flecha-esquerdo.png" alt="" class="flecha" onclick="back()" >
+                </div>
+                <div class="div-img-left">
+                    <img src="assets/images/img1.jpg" alt="" class="img img-left" id="space1">
+                </div>
+                <div class="div-img-center">
+                    <img src="assets/images/img2.jpg" alt="" class="img img-center" id="space2">
+                </div>
+                <div class="div-img-right">
+                    <img src="assets/images/img3.jpg" alt="" class="img img-right" id="space3">
+                </div>
+                <div class="faixa faixa-direita">
+                    <img src="assets/icons/flecha-direito.png" alt="" class="flecha" onclick="next()">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

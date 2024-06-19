@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button type="button" onclick="iniciarChat(), limpar()" >Avançar</button>
+    Resposta: <input type="text" id="resposta">
+
+
+    <script>
+        function* chat() {
+            let opcao = yield 'Olá, tudo bem?'
+
+            if(opcao === "Sim") {
+                yield 'Ótimo'
+
+                opcao = yield 'Como eu posso te ajudar? Quer uma piada?'
+                if(opcao === 'Sim') {
+                    let piada
+                    fetch('piadas.json').then(resposta => resposta.json()).then(piadas => {
+                        piada = piadas[Math.floor(Math.random() * 6)]
+                        console.log(piada.piada)
+                    })
+                    setTimeout(() => {
+                        console.log(piada.resposta)
+                        console.log("Muito boa a piada. Ri muito mesmo, acredite")
+                    }, 4000)
+                }
+            }
+        }
+
+        let chat1 = chat()
+
+        function iniciarChat() {
+            let resposta = document.getElementById('resposta').value
+            let interacao = chat1.next(resposta)
+            console.log(interacao)
+        }
+        function limpar() {
+            let resposta = document.getElementById("resposta")
+            resposta.value = ''
+        }
+
+       
+    </script>
+</body>
+</html>

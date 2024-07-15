@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #00000034;
+}
+.navbar {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-inline: 50px;
+}
+.navbar * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar ul {
+    display: flex;
+    width: 250px;
+    
+    justify-content: space-evenly;
+    list-style: none;
+    
+
+}
+.navbar ul li {
+    cursor: pointer;
+
+    
+    border-radius: 15px;
+    padding: 4px;
+    padding-inline: 10px;
+}
+.navbar ul :hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
